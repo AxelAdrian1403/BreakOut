@@ -20,7 +20,7 @@ public class Bola : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Space) || Input.GetButton("Submit"))
+        if (Input.GetKey(KeyCode.Space) || Input.GetButton("Submit") || Input.GetButton("Option"))
         {
             if(!isGameStarted)
             {
