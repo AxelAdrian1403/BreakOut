@@ -15,4 +15,10 @@ public class Bloque_Piedra : Bloque
     {
         
     }
+
+    public override void RebotarBola(Collision collision)
+    {
+        base.RebotarBola(collision); //Toma las sentencias que ya hace la clase padre
+
+    }
 }

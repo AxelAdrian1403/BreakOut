@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AdministradorDePersistencia : MonoBehaviour
 {
-    public List<PuntajePersistente> objetosAGuardar;
+    public List<ObjetoPersistente> objetosAGuardar;
     // Start is called before the first frame update
 
     public void OnEnable()
