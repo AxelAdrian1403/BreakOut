@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
+    
+    private int limiteX;
     //Permite que aparezca en el editor de Unity
-    [SerializeField] public int limiteX = 23;
-
     //Velocidad de movimiento
-    [SerializeField] public float velocidadPaddle = 5.0f;
+    [SerializeField] public float velocidadPaddle = 35.0f;
+    
 
     Transform transform;
 
@@ -17,13 +18,14 @@ public class Jugador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        limiteX = (int)(Camera.main.orthographicSize * Camera.main.aspect - 4);
         transform = this.gameObject.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        MovimientoControl();
+        MovimientoTeclado();
     }
 
     public void MovimientoMouse()

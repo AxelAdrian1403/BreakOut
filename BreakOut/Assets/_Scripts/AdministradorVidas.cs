@@ -7,7 +7,7 @@ public class AdministradorVidas : MonoBehaviour
     [HideInInspector] public List<GameObject> vidas;
     public GameObject bolaPrefab;
     private Bola bolaScript;
-    public GameObject MenuFinJuego;
+    public GameObject MenuReintentarNivel;
     
 
     // Start is called before the first frame update
@@ -23,12 +23,12 @@ public class AdministradorVidas : MonoBehaviour
     public void EliminarVida()
     {
         var objetoAEliminar = vidas[vidas.Count - 1];
-        vidas.Remove(objetoAEliminar);
         Destroy(objetoAEliminar);
+        vidas.Remove(objetoAEliminar);
 
         if (vidas.Count <= 0)
         {
-            MenuFinJuego.SetActive(true);
+            MenuReintentarNivel.SetActive(true);
             return;
         }
 

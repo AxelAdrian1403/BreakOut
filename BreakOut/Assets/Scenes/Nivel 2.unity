@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 9da6dd9c2ff48dd4b94335226d156e0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -332.46756
+      value: -343.99756
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 9da6dd9c2ff48dd4b94335226d156e0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -833,7 +833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 747050905817533337, guid: 90486fbf56bf03040aa96908963113ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -315.14
+      value: -301.72
       objectReference: {fileID: 0}
     - target: {fileID: 747050905817533337, guid: 90486fbf56bf03040aa96908963113ea, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2617,7 +2617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 182ecc281fd1db24689e9348c992be1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -340.19
+      value: -351.72
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 182ecc281fd1db24689e9348c992be1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3872,7 +3872,7 @@ MonoBehaviour:
   transformPuntajeActual: {fileID: 0}
   textoPuntajeAlto: {fileID: 0}
   textoActual: {fileID: 0}
-  medidorPuntaje: {fileID: 11400000, guid: de01439863f6f804489e36a1e6b9234d, type: 2}
+  medidorPuntaje: {fileID: 11400000, guid: 42ec1895a52802942abfa1b766699dba, type: 2}
   bloquePrefab: {fileID: 505164029}
 --- !u!114 &963194232
 MonoBehaviour:
@@ -5244,11 +5244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 747050905817533337, guid: 90486fbf56bf03040aa96908963113ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -320.46756
+      value: -307.04755
       objectReference: {fileID: 0}
     - target: {fileID: 747050905817533337, guid: 90486fbf56bf03040aa96908963113ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -225.44893
+      value: -217.39
       objectReference: {fileID: 0}
     - target: {fileID: 747050905817533337, guid: 90486fbf56bf03040aa96908963113ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5322,7 +5322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 9da6dd9c2ff48dd4b94335226d156e0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -327.14
+      value: -313.72
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 9da6dd9c2ff48dd4b94335226d156e0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetosAGuardar:
-  - {fileID: 11400000, guid: de01439863f6f804489e36a1e6b9234d, type: 2}
+  - {fileID: 11400000, guid: 42ec1895a52802942abfa1b766699dba, type: 2}
   - {fileID: 11400000, guid: 9f21d8fc3df115d428648980f5796b60, type: 2}
 --- !u!4 &1863395342
 Transform:
@@ -6530,7 +6530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 182ecc281fd1db24689e9348c992be1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -321.14
+      value: -307.72
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 182ecc281fd1db24689e9348c992be1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6738,7 +6738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 182ecc281fd1db24689e9348c992be1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -326.46756
+      value: -337.99756
       objectReference: {fileID: 0}
     - target: {fileID: 4638236223013079242, guid: 182ecc281fd1db24689e9348c992be1d, type: 3}
       propertyPath: m_LocalPosition.y

@@ -64,7 +64,7 @@ public class ControlBordes : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (!Application.isPlaying) return;
-        Vector3 tamanoBorde = new Vector3(anchoCamara * 2, altoCamara * 2, 0.1f);
+        Vector3 tamanoBorde = new Vector3(anchoCamara * 2 - 0.5F, altoCamara * 2 - 0.5F, 0.2f);
         Gizmos.DrawWireCube(Vector3.zero, tamanoBorde);
     }
 }

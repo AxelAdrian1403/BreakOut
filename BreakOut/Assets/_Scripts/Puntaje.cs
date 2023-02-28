@@ -9,7 +9,9 @@ public class Puntaje : MonoBehaviour
     public Transform transformPuntajeActual;
     public TMP_Text textoPuntajeAlto;
     public TMP_Text textoActual;
-    public PuntajeAlto puntajeAltoSO;
+    public MedidorPuntaje medidorPuntaje;
+    public GameObject bloquePrefab;
+    private Bloque bloque;
     //public int puntos = 0;
     //public int puntajeAlto = 10000;
 
@@ -27,32 +29,33 @@ public class Puntaje : MonoBehaviour
         //    puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
         //    textoPuntajeAlto.text = $"Puntaje Alto: {puntajeAlto}";
         //}
-        puntajeAltoSO.Cargar();
-        textoPuntajeAlto.text = $"Puntaje Alto: {puntajeAltoSO.puntajeAlto}";
-        puntajeAltoSO.puntaje = 0;
+        //puntajeAltoSO.Cargar();
+        textoPuntajeAlto.text = $"Puntaje Alto: {medidorPuntaje.puntajeAlto}";
+        medidorPuntaje.puntaje = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        textoActual.text = $"Puntaje Actual: {puntajeAltoSO.puntaje}";
+        textoActual.text = $"Puntaje Actual: {medidorPuntaje.puntaje}";
 
-        if(puntajeAltoSO.puntaje > puntajeAltoSO.puntajeAlto)
+        if(medidorPuntaje.puntaje > medidorPuntaje.puntajeAlto)
         {
-            puntajeAltoSO.puntajeAlto = puntajeAltoSO.puntaje;
-            textoPuntajeAlto.text = $"Puntaje Alto: {puntajeAltoSO.puntajeAlto}";
-            puntajeAltoSO.Guardar();
+            medidorPuntaje.puntajeAlto = medidorPuntaje.puntaje;
+            textoPuntajeAlto.text = $"Puntaje Alto: {medidorPuntaje.puntajeAlto}";
+            //puntajeAltoSO.Guardar();
             //PlayerPrefs.SetInt("PuntajeAlto", puntos);
         }
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
 
-    public void AumentarPuntaje(int puntos)
+    public void AumentarPuntos()
     {
-        puntajeAltoSO.puntaje += puntos;
+        var bl = bloquePrefab;
+        bloque = bl.GetComponent<Bloque>();
+        bloque.AumentarPuntaje.AddListener(this.AumentarPuntos);
+        medidorPuntaje.puntaje += Bloque.puntosBloque;
+        
     }
 }

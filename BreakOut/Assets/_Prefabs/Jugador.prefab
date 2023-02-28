@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8400481066906835839}
   - component: {fileID: 1817626534580102776}
   - component: {fileID: 2861066883048837377}
+  - component: {fileID: 1334426262}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Jugador
@@ -113,3 +114,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 3
+--- !u!114 &1334426262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014941946025563515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f36c922c081dd84d90dde8e049cf95d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadPaddle: 35

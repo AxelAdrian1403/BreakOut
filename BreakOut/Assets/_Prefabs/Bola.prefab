@@ -131,7 +131,7 @@ MonoBehaviour:
   BolaDestruida:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7747850272467759617, guid: 002e650c27e9d4742b6ecc36c1f7e420, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AdministradorVidas, Assembly-CSharp
         m_MethodName: EliminarVida
         m_Mode: 1
@@ -142,7 +142,8 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
+  opciones: {fileID: 11400000, guid: 9f21d8fc3df115d428648980f5796b60, type: 2}
 --- !u!114 &8184969711464605655
 MonoBehaviour:
   m_ObjectHideFlags: 0
