@@ -12,6 +12,7 @@ public class Bola : MonoBehaviour
     Rigidbody rigidbody;
     private ControlBordes control;
     public UnityEvent BolaDestruida;
+    public Opciones opciones;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class Bola : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        velocidadBola = opciones.velocidadBola;
         //Encontrar la posicion del Paddle
         Vector3 posicionInicial = GameObject.FindGameObjectWithTag("Jugador").transform.position;
         posicionInicial.y += 3;
@@ -29,17 +31,32 @@ public class Bola : MonoBehaviour
 
         rigidbody = this.gameObject.GetComponent<Rigidbody>();
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Bloque")
+        {
+            Bloque.bloqueValor = 1;
+            Bloque.puntosBloque = 1000;
+        }
+        if (collision.gameObject.tag == "BloqueMadera")
+        {
+            Bloque.puntosBloque = 2000;
+        }
+        if (collision.gameObject.tag == "BloquePiedra")
+        {
+            Bloque.bloqueValor = 3; 
+            Bloque.puntosBloque = 4000;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if(control.salioAbajo)
+        velocidadBola = opciones.velocidadBola;
+        if (control.salioAbajo)
         {
             BolaDestruida.Invoke();
             Destroy(this.gameObject);
-            control.salioAbajo = false;
-            control.enabled = false;
-            Invoke("HabilitarControl", 0.2f);
+
         }
 
         if (control.salioArriba)
@@ -101,4 +118,6 @@ public class Bola : MonoBehaviour
     {
         control.enabled = true;
     }
+
+
 }

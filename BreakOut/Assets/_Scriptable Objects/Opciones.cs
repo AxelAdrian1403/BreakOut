@@ -7,6 +7,7 @@ public class Opciones : ObjetoPersistente
 {
     public float velocidadBola = 30;
     public dificultad nivelDificultad = dificultad.facil;
+    
 
     public enum dificultad
     {

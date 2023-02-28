@@ -1299,7 +1299,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1838,7 +1838,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1089905492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,7 +3035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetosAGuardar:
-  - {fileID: 11400000, guid: a309cfff8c171b741ba04fe0c00958ad, type: 2}
+  - {fileID: 11400000, guid: de01439863f6f804489e36a1e6b9234d, type: 2}
   - {fileID: 11400000, guid: 9f21d8fc3df115d428648980f5796b60, type: 2}
 --- !u!4 &1863395342
 Transform:

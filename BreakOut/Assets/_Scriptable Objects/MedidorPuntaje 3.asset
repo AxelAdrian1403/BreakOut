@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c152f07cfaa17ea45ac47641860d49ed, type: 3}
-  m_Name: PuntajeAlto
+  m_Name: MedidorPuntaje 3
   m_EditorClassIdentifier: 
   puntaje: 0
-  puntajeAlto: 10000
+  puntajeAlto: 0

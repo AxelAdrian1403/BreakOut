@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378a79bc5a7e7894fb231b2f3d61c314, type: 3}
-  m_Name: Opciones
+  m_Script: {fileID: 11500000, guid: c152f07cfaa17ea45ac47641860d49ed, type: 3}
+  m_Name: MedidorPuntaje
   m_EditorClassIdentifier: 
-  velocidadBola: 30
-  nivelDificultad: 2
+  puntaje: 0
+  puntajeAlto: 0

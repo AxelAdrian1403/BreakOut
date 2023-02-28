@@ -6,7 +6,10 @@ using UnityEngine.Events;
 public class Bloque : MonoBehaviour
 {
     public int resistencia = 1;
+    [HideInInspector] public static int puntosBloque = 1000;
     public UnityEvent AumentarPuntaje;
+    [HideInInspector] public static int bloqueValor;
+    
 
     public void OnCollisionEnter(Collision collision)
     {
@@ -18,7 +21,7 @@ public class Bloque : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        bloqueValor = 1;
     }
 
     // Update is called once per frame
@@ -38,5 +41,9 @@ public class Bloque : MonoBehaviour
 
         collision.rigidbody.velocity = collision.gameObject.GetComponent<Bola>().velocidadBola * direccion;
         resistencia--;
+
+        AumentarPuntaje.Invoke();
+
+        
     }
 }

@@ -11,12 +11,14 @@ public class MenuPausa : MonoBehaviour
     public void MostrarMenuPausa()
     {
         menuPausa.SetActive(true);
+        Time.timeScale = 0;
         if (menuOpciones.activeInHierarchy) menuOpciones.SetActive(false);
     }
 
     public void OcultarMenuPausa()
     {
         menuPausa.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void RegresarAPantallaPrincipal()
