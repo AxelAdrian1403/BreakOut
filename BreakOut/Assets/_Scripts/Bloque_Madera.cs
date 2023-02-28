@@ -16,9 +16,9 @@ public class Bloque_Madera : Bloque
         
     }
 
-    public override void RebotarBola()
+    public override void RebotarBola(Collision collision)
     {
-        //base.RebotarBola(); Toma las sentencias que ya hace la clase padre
+        base.RebotarBola(collision); //Toma las sentencias que ya hace la clase padre
 
     }
 }

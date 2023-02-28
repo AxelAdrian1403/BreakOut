@@ -48,6 +48,11 @@ public class Puntaje : MonoBehaviour
 
     private void FixedUpdate()
     {
-        puntajeAltoSO.puntaje += 50;
+        
+    }
+
+    public void AumentarPuntaje(int puntos)
+    {
+        puntajeAltoSO.puntaje += puntos;
     }
 }
